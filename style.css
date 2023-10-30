@@ -1,0 +1,181 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+    background-color: #2C3333;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    height: 80px;
+    overflow: hidden;
+}
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Sometype Mono', monospace;
+  background-color: #DDE6ED;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin: 20px;
+}
+nav li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px;
+}
+nav ul li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 17px;
+  color: #f2f2f2;
+  border-radius: 3px;
+}
+a.active, a:hover{
+background: #0E8388;
+transition: .5s;
+}
+.my-img{
+  width: 500px;
+  padding-right: 200px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right:40px ;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media(max-width:952px){
+  label.logo{
+    font-size:30px ;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width:858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    background-color: #0E8388;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition:all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: #5C8374;
+  }
+  #chek:checked ~ ul{
+    left:0;
+  }
+}
+.opening-head{
+  display: flex;
+  align-items: center;
+  margin: 123px;
+  background-color: #5C8374;
+
+}
+.opening-head h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 90px;
+}
+.pic1{
+  width: 200px;
+  height: 250px;
+}
+.pic2{
+  width: 150px;
+  height: 250px;
+}
+.pic3{
+  width: 300px;
+  height: 250px;
+}
+.pic4{
+  width: 300px;
+  height: 250px;
+}
+.contact a{
+  text-decoration: none;
+}
+
+.dog-pics {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.dog-pics h1{
+  margin: auto;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #5C8374;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.description{
+  margin-bottom: 150px;
+}
+
+.description h1{
+  margin: auto;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #5C8374;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact h1{
+  margin: auto;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #5C8374;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact{
+  text-align: center;
+  margin-bottom: 150px;
+}
